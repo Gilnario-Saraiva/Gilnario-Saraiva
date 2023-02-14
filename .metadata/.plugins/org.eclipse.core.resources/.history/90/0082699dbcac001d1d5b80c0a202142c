@@ -88,17 +88,14 @@ public class Cadastro {
 
 		System.out.println("-----------------------------------");
 
+	/*	System.out.print("Digite o codigo do setor: ");
+		int respCodSetor = sc.nextInt(); */
+
 		List<Funcionario> totalFuncionario = funcionarios.stream()
 				.filter(funcionario -> funcionario.getSetor().getCodigo() == 1).collect(Collectors.toList());
 
 		System.out
 				.println("Quantidades de funcionarios no setor " +  1 + ": " + totalFuncionario.size() + " funcionarios -- descricao: " + setor.getDescricao(1));
-		
-		totalFuncionario = funcionarios.stream()
-				.filter(funcionario -> funcionario.getSetor().getCodigo() == 2).collect(Collectors.toList());
-
-		System.out
-				.println("Quantidades de funcionarios no setor " +  2 + ": " + totalFuncionario.size() + " funcionarios -- descricao: " + setor.getDescricao(2));
 		
 		sc.close();
 

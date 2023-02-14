@@ -88,6 +88,9 @@ public class Cadastro {
 
 		System.out.println("-----------------------------------");
 
+	/*	System.out.print("Digite o codigo do setor: ");
+		int respCodSetor = sc.nextInt(); */
+
 		List<Funcionario> totalFuncionario = funcionarios.stream()
 				.filter(funcionario -> funcionario.getSetor().getCodigo() == 1).collect(Collectors.toList());
 
