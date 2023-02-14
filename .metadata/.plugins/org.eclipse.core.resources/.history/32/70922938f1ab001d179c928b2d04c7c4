@@ -1,0 +1,48 @@
+package entities;
+
+public class Funcionario {
+	private String nomeFuncionario;
+	private String nascFunc;
+	private int matricula;
+
+	public Funcionario() {
+	
+	}
+	
+	public Funcionario(String nomeFuncionario, String nascFunc, int matricula) {
+		this.nomeFuncionario = nomeFuncionario;
+		this.nascFunc = nascFunc;
+		this.matricula = matricula;
+	}
+
+	
+	
+	public String getNomeFuncionario() {
+		return nomeFuncionario;
+	}
+
+	public void setNomeFuncionario(String nomeFuncionario) {
+		this.nomeFuncionario = nomeFuncionario;
+	}
+
+	
+	public String getNascFunc() {
+		return nascFunc;
+	}
+
+	public void setNascFunc(String nascFunc) {
+		this.nascFunc = nascFunc;
+	}
+
+	public int getMatricula() {
+		return matricula;
+	}
+
+	public void setMatricula(int matricula) {
+		this.matricula = matricula;
+	}
+	
+	public String toString() {
+		return nomeFuncionario + "; " + nascFunc + ", " + matricula;
+	}
+}

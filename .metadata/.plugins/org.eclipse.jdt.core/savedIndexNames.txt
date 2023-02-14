@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\gilna\Documents\selecao\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+2884690556.index
+2014957666.index

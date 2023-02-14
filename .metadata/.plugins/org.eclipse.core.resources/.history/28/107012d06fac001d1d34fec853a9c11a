@@ -1,0 +1,45 @@
+package entities;
+
+import java.util.Date;
+
+public class Dependentes extends Funcionario {
+    private String nome;
+    private Date dataNascimento;
+
+    public Dependentes() {
+    }
+
+    public Dependentes(String nome, Date dataNascimento) {
+        this.nome = nome;
+        this.dataNascimento = dataNascimento;
+    }
+    
+    public Dependentes(String nomeFuncionario, int matricula, Setor setor, Date dataNascFunc, String nome, Date dataNascimento)  {
+		super(nomeFuncionario, matricula, setor, dataNascFunc);
+        this.nome = nome;
+        this.dataNascimento = dataNascimento;
+	}
+
+	public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public Date getDataNascimento() {
+        return dataNascimento;
+    }
+
+    public void setDataNascimento(Date dataNascimento) {
+        this.dataNascimento = dataNascimento;
+    }
+    
+    @Override
+    public String toString() {
+        return "Dependente: " +
+                "nome='" + nome + '\'' +
+                ", dataNascimento=" + dataNascimento;
+    }
+}

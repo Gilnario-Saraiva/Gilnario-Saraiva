@@ -1,0 +1,47 @@
+package entities;
+
+public class Funcionario {
+	private String nomeFuncionario;
+	private String dataNascimento;
+	private int matricula;
+
+	public Funcionario() {
+	
+	}
+	
+	public Funcionario(String nomeFuncionario, String dataNascimento, int matricula) {
+		this.nomeFuncionario = nomeFuncionario;
+		this.dataNascimento = dataNascimento;
+		this.matricula = matricula;
+	}
+
+	
+	
+	public String getNomeFuncionario() {
+		return nomeFuncionario;
+	}
+
+	public void setNomeFuncionario(String nomeFuncionario) {
+		this.nomeFuncionario = nomeFuncionario;
+	}
+
+	public String getDataNascimento() {
+		return dataNascimento;
+	}
+
+	public void setDataNascimento(String dataNascimento) {
+		this.dataNascimento = dataNascimento;
+	}
+
+	public int getMatricula() {
+		return matricula;
+	}
+
+	public void setMatricula(int matricula) {
+		this.matricula = matricula;
+	}
+	
+	public String toString() {
+		return nomeFuncionario + "; " + dataNascimento + ", " + matricula;
+	}
+}

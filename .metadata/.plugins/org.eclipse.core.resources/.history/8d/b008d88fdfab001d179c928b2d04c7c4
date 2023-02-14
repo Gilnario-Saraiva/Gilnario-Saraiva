@@ -1,0 +1,23 @@
+package entities;
+
+public class Dependentes extends Funcionario{
+
+	private String nome;
+	private String dataNascimento;
+	
+	public Dependentes() {
+		super();
+	}
+	
+	public Dependentes(String nome, String dataNascimento, int matricula) {
+		super(nome, dataNascimento, matricula);
+		this.nome = nome;
+		this.dataNascimento = dataNascimento;
+		
+	}
+
+	
+	
+	
+	
+}
