@@ -55,7 +55,7 @@ public class Cadastro {
 				System.out.print("Digite o numero de dependentes do funcionario " + i + ": ");
 				int qtdDependentes = sc.nextInt();
 				sc.nextLine();
-				dependentes = new ArrayList<>();
+
 				for (int j = 1; j <= qtdDependentes; j++) {
 					System.out.print("Digite o nome do dependente " + j + ": ");
 					String nomeDependente = sc.nextLine();
@@ -64,7 +64,7 @@ public class Cadastro {
 					Date dataNascimentoDependente = fmt2.parse(sc.nextLine());
 
 					Dependentes dependente = new Dependentes(nomeDependente, dataNascimentoDependente);
-					
+
 					dependentes.add(dependente);
 
 				}

@@ -40,7 +40,7 @@ public class Dependentes {
     public String toString() {
         return "Dependente: " +
                 "nome='" + nome + '\'' +
-                ", dataNascimento = " + fmt.format(dataNascimento);
+                ", dataNascimento=" + fmt.format(dataNascimento);
     }
 
 }
